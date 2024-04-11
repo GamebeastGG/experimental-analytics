@@ -12,7 +12,7 @@ from llama_index.llms.openai import OpenAI
 llm = OpenAI(temperature=0.1, model="gpt-4")
 
 
-os.environ["OPENAI_API_KEY"] = st.secrets["api_credentials"].openai_api_key
+os.environ["OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 
 # Load and prepare data
 df = pd.read_csv("chat_rows_sentiment.csv")
